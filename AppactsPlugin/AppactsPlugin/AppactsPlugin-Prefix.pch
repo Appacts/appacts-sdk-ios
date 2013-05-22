@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'AppactsPlugin' target in the 'AppactsPlugin' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

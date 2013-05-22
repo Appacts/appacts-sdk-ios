@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/appacts-mobileapps/!svn/ver/122/trunk/iOS/SampleApplicationBasic/SampleApplicationBasic/en.lproj
+END
+InfoPlist.strings
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/appacts-mobileapps/!svn/ver/122/trunk/iOS/SampleApplicationBasic/SampleApplicationBasic/en.lproj/InfoPlist.strings
+END
+MainStoryboard_iPad.storyboard
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/appacts-mobileapps/!svn/ver/129/trunk/iOS/SampleApplicationBasic/SampleApplicationBasic/en.lproj/MainStoryboard_iPad.storyboard
+END
+MainStoryboard_iPhone.storyboard
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/appacts-mobileapps/!svn/ver/129/trunk/iOS/SampleApplicationBasic/SampleApplicationBasic/en.lproj/MainStoryboard_iPhone.storyboard
+END
