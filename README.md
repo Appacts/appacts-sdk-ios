@@ -174,6 +174,8 @@ We suggest that you add an abstract base class into your application so that you
         
         @end
 
+
+
 ####Session Management####
 
 Fantastic thing about iOS framework is that all of the application life-cycle event handlers can be found in one place. You need to update AppDelegate.m to call relevant methods.
@@ -222,6 +224,8 @@ Fantastic thing about iOS framework is that all of the application life-cycle ev
 
 Note: Please make sure that .Start & .Stop is always called from main thread, these two methods need to hook in to network coverage event handler.
 
+
+
 ####Opt In or Opt out?####
 
 Every app is different. Your business needs to make a decision about how it wants to deal with its users. You can be really nice and ask your users whether or not they would like to participate in your customer experience improvement program. If they say yes you can use our services and log their experience. Alternatively you can make them opt in automatically by accepting your terms and conditions. Either way here is how you control opt in/ out in the terms and conditions scenario:
@@ -269,6 +273,8 @@ Every app is different. Your business needs to make a decision about how it want
     }
 
 
+
+
 ####Demographics####
 
 To improve your app you need to know who is using it, how old they are, what their gender is & where they are from. We have made it easy for you to capture this information:
@@ -303,6 +309,7 @@ Note: Our plugin throws exception if it can't save users information. Normally t
 
 
 
+
 ####Logging and uploading your customers experience####
 
 
@@ -320,6 +327,8 @@ Note: Our plugin throws exception if it can't save users information. Normally t
     - (void)uploadManual;
 
 
+
+
 #####Sample - LogError#####
 
     @try
@@ -334,12 +343,16 @@ Note: Our plugin throws exception if it can't save users information. Normally t
     }
 
 
+
+
 #####Sample - LogEvent#####
 
     - (IBAction)btnGenerateClick:(id)sender
     {
         [[AnalyticsSingleton getInstance] logEventWithScreenName:self.screenName eventName:@"Generate" data:NULL];
     }
+
+
 
 
 #####Sample - LogFeedback#####
@@ -378,6 +391,8 @@ Note: Our plugin throws exception if it can't save users information. Normally t
 
 Note: Screen names need to be unique for each screen. We collect screen names in our plugin so that when Screen Closed is called we can calculate how long the user was on the screen for. You can use ScreenOpen many times but it will only register each unique screen name once.
 
+
+
 #####Sample - ContentLoading & ContentLoaded#####
 
     [[AnalyticsSingleton getInstance] contentLoadingWithScreenName:self.screenName contentName:@"GeneratingContent"];
@@ -394,15 +409,17 @@ Note: Screen names need to be unique for each screen. We collect screen names in
     [[AnalyticsSingleton getInstance] contentLoadedWithScreenName:self.screenName contentName:@"GeneratingContent"];
 
 
+
+
 ####Sample - UploadWhileUsingAsync & UploadManual####
 
 We have created two methods for two different scenarios:
 
-#UploadWhileUsingAsync – use this when you are creating a light application, i.e. utilities, forms, etc.. Using this method we will take care of all data uploading. As soon as the user creates an event we will try and upload this event to our servers and present it to you in your reports. The aim of this approach is to prevent waiting and obtain data straight away. Using this approach is recommended by our team as this will monitor network coverage, event queues and it will do its best to get data to our servers immediately.
+*UploadWhileUsingAsync – use this when you are creating a light application, i.e. utilities, forms, etc.. Using this method we will take care of all data uploading. As soon as the user creates an event we will try and upload this event to our servers and present it to you in your reports. The aim of this approach is to prevent waiting and obtain data straight away. Using this approach is recommended by our team as this will monitor network coverage, event queues and it will do its best to get data to our servers immediately.
 
-#UploadManual – use this when you have a very event heavy application i.e. game. Using this method you will need to raise the upload event manually when you are ready. This is a very light approach and popular among some app makers, however data might not be uploaded to our servers for days/ weeks (depending on the app use) therefore statistics will be delayed.
+*UploadManual – use this when you have a very event heavy application i.e. game. Using this method you will need to raise the upload event manually when you are ready. This is a very light approach and popular among some app makers, however data might not be uploaded to our servers for days/ weeks (depending on the app use) therefore statistics will be delayed.
 
-#UploadWhileUsingAsync & UploadManual – you could always use both together. You can specify that you want to upload manually and later call UploadWhileUsingAsync. The example below will demonstrate this.
+*UploadWhileUsingAsync & UploadManual – you could always use both together. You can specify that you want to upload manually and later call UploadWhileUsingAsync. The example below will demonstrate this.
 
 #####UploadWhileUsingAsync#####
 
