@@ -17,8 +17,9 @@
 @interface Analytics : NSObject
 
 - (id)init;
-- (void)startWithApplicationId:(NSString *)anApplicationId;
-- (void)startWithApplicationId:(NSString *)anApplicationId uploadType:(UploadType)anUploadType;
+- (void)startWithApplicationId:(NSString *)anApplicationId baseUrl:(NSString *)anBaseUrl;
+- (void)startWithApplicationId:(NSString *)anApplicationId uploadType:(UploadType)anUploadType
+baseUrl:(NSString *)anBaseUrl;
 
 - (void)logErrorWithScreenName: (NSString *)aScreenName eventName: (NSString *)anEventName data: (NSString*)aData exception: (NSException *)anException;
 

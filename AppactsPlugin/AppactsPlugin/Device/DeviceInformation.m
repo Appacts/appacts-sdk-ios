@@ -1,12 +1,5 @@
-//
-//  DeviceInformation.m
-//  AppactsPlugin
-//
-//  Created by Jamie Wheeldon on 23/05/2012.
-//  Copyright (c) 2012 Appacts. All rights reserved.
-//
-
 #import "DeviceInformation.h"
+
 
 @interface DeviceInformation()
 
@@ -18,7 +11,7 @@
 
 @implementation DeviceInformation
 
-NSString * const pluginVersion = @"0.9.950.900";
+NSString * const pluginVersion = @"1.1.0.2322";
 
 - (id)init {
     return self;
@@ -56,6 +49,19 @@ NSString * const pluginVersion = @"0.9.950.900";
 
 - (int)getPluginVersionCode {
     return [DeviceInformation.pluginVersion stringByReplacingOccurrencesOfString:@"." withString:@""].intValue;
+}
+
+- (NSString *)getLocale {
+    return [[NSLocale currentLocale] localeIdentifier];
+}
+
+- (ScreenResolution *)getScreenResolution {
+    CGRect screenBounds = [[UIScreen mainScreen] bounds];
+    return [[ScreenResolution alloc] initWithScreenWidth:screenBounds.size.width screenHeight:screenBounds.size.height];
+}
+
+- (NSString *)getManufacturer {
+    return @"Apple";
 }
 
 + (NSString *)pluginVersion {

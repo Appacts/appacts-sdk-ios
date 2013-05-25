@@ -29,7 +29,11 @@
 
 - (id)initWithBaseUrl: (NSString *)aBaseUrl;
 
-- (CFUUIDRef)deviceWithApplicationId: (CFUUIDRef)anApplicationId model: (NSString *)aModel osVersion: (NSString *)anOsVersion deviceType: (int)aDeviceType carrier: (NSString *)aCarrier applicationVersion: (NSString *)anApplicationVersion timeZoneOffset: (int)aTimeZoneOffset
+- (CFUUIDRef)deviceWithApplicationId: (CFUUIDRef)anApplicationId model: (NSString *)aModel
+    osVersion: (NSString *)anOsVersion deviceType: (int)aDeviceType
+        carrier: (NSString *)aCarrier applicationVersion: (NSString *)anApplicationVersion
+                      timeZoneOffset: (int)aTimeZoneOffset locale: (NSString *) anLocale screenWidth:(int) anScreenWidth
+                        screenHeight:(int) anScreenHeight manufacturer:(NSString *) anManufacturer
                         responseCode: (int *)aResponseCode;
 
 - (int)crashWithDeviceId: (CFUUIDRef)aDeviceId crash: (Crash *)aCrash;

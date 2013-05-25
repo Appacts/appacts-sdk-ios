@@ -19,7 +19,7 @@
     
     //start main analytics session
     [[AnalyticsSingleton getInstance] startWithApplicationId:@"84ddec93-198a-449c-9069-fa842536d25c" baseUrl:@"http://api-dev.appacts.com/"];
-    
+
     return YES;
 }
 

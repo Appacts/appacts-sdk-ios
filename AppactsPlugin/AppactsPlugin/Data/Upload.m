@@ -35,7 +35,12 @@
     return self;
 }
 
-- (CFUUIDRef)deviceWithApplicationId: (CFUUIDRef)anApplicationId model: (NSString *)aModel osVersion: (NSString *)anOsVersion deviceType: (int)aDeviceType carrier: (NSString *)aCarrier applicationVersion: (NSString *)anApplicationVersion timeZoneOffset: (int)aTimeZoneOffset responseCode:(int *)aResponseCode  {
+- (CFUUIDRef)deviceWithApplicationId: (CFUUIDRef)anApplicationId model: (NSString *)aModel osVersion: (NSString *)anOsVersion
+                          deviceType: (int)aDeviceType carrier: (NSString *)aCarrier
+                  applicationVersion: (NSString *)anApplicationVersion timeZoneOffset: (int)aTimeZoneOffset
+                              locale:(NSString *) anLocale screenWidth:(int)anScreenWidth screenHeight:(int)anScreenHeight
+                        manufacturer:(NSString *)anManufacturer responseCode:(int *)aResponseCode
+{
     
     CFUUIDRef deviceId = NULL;
     
@@ -48,6 +53,10 @@
         urlString = [self addToUrl:urlString key:OPERATING_SYSTEM value:anOsVersion];
         urlString = [self addToUrl:urlString key:VERSION value:anApplicationVersion];
         urlString = [self addToUrl:urlString key:TIME_ZONE_OFFSET value:[NSString stringWithFormat:@"%i", aTimeZoneOffset]];
+        urlString = [self addToUrl:urlString key:LOCALE value:anLocale];
+        urlString = [self addToUrl:urlString key:RESOLUTION_WIDTH value:[NSString stringWithFormat:@"%i", anScreenWidth]];
+        urlString = [self addToUrl:urlString key:RESOLUTION_HEIGHT value:[NSString stringWithFormat:@"%i", anScreenHeight]];
+        urlString = [self addToUrl:urlString key:MANUFACTURER value:anManufacturer];
         
 #ifdef DEBUG
         NSLog(urlString, nil);

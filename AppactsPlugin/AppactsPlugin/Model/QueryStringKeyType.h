@@ -1,11 +1,3 @@
-//
-//  QueryStringKeyType.h
-//  AppactsPlugin
-//
-//  Created by Jamie Wheeldon on 20/05/2012.
-//  Copyright (c) 2012 Appacts. All rights reserved.
-//
-
 #import <Foundation/Foundation.h>
 
 @interface QueryStringKeyType : NSObject
@@ -43,5 +35,8 @@ extern NSString * const LOCATION_ADMIN;
 extern NSString * const LOCATION_ADMIN_CODE;
 extern NSString * const SESSION_ID;
 extern NSString * const TIME_ZONE_OFFSET;
-
+extern NSString * const LOCALE;
+extern NSString * const RESOLUTION_WIDTH;
+extern NSString * const RESOLUTION_HEIGHT;
+extern NSString * const MANUFACTURER;
 @end

@@ -795,7 +795,9 @@ uploadType:(UploadType)anUploadType baseUrl:(NSString *)anBaseUrl {
                 deviceId = [self.settings getDeviceId];
                 
                 if (deviceId == NULL) {
-                    deviceId = [self.upload deviceWithApplicationId:self.applicationId model:[deviceInformation getModel] osVersion:[self.platform getOS] deviceType:iOS carrier:[self.platform getCarrier] applicationVersion:self.applicationVersion timeZoneOffset:[Utils getTimeOffSet] responseCode:&responseCode];
+                    deviceId = [self.upload deviceWithApplicationId:self.applicationId model:[deviceInformation getModel] osVersion:[self.platform getOS]
+                        deviceType:iOS carrier:[self.platform getCarrier] applicationVersion:self.applicationVersion
+                                                     timeZoneOffset:[Utils getTimeOffSet] locale:[deviceInformation getLocale] screenWidth:[[deviceInformation getScreenResolution] Width] screenHeight:[[deviceInformation getScreenResolution] Height] manufacturer:[deviceInformation getManufacturer] responseCode:&responseCode];
                     
                     if(responseCode == Ok) {
                         [self.settings saveDeviceId:deviceId dateCreated:[Utils getDateTimeNow]];

@@ -21,11 +21,11 @@
 		333070AA168A261B0066434D /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 333070A6168A261B0066434D /* MainStoryboard_iPad.storyboard */; };
 		333070AB168A261B0066434D /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 333070A8168A261B0066434D /* MainStoryboard_iPhone.storyboard */; };
 		333070AD168A273D0066434D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 330E5B14168A22C100EC6817 /* ViewController.m */; };
+		33452EA117513CB50029ECCB /* AppactsPlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33452EA017513CB50029ECCB /* AppactsPlugin.framework */; };
 		33C0134C168A6B790010B2E4 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 33C0134B168A6B790010B2E4 /* libsqlite3.dylib */; };
 		33C0134E168A6BB10010B2E4 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33C0134D168A6BB10010B2E4 /* CoreTelephony.framework */; };
 		33C01350168A6BF10010B2E4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33C0134F168A6BF10010B2E4 /* SystemConfiguration.framework */; };
 		33C01352168A6C090010B2E4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33C01351168A6C090010B2E4 /* CoreLocation.framework */; };
-		33F4CFC2168DAFF000909161 /* AppactsPlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33F4CFC1168DAFF000909161 /* AppactsPlugin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,11 +48,11 @@
 		330E5B14168A22C100EC6817 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		333070A7168A261B0066434D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		333070A9168A261B0066434D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		33452EA017513CB50029ECCB /* AppactsPlugin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppactsPlugin.framework; path = ../AppactsPlugin.framework; sourceTree = "<group>"; };
 		33C0134B168A6B790010B2E4 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		33C0134D168A6BB10010B2E4 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		33C0134F168A6BF10010B2E4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		33C01351168A6C090010B2E4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		33F4CFC1168DAFF000909161 /* AppactsPlugin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppactsPlugin.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/Appacts-esbiolylxqegbkbqihqcvqcnzmmw/Build/Products/Debug-iphoneos/AppactsPlugin.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +60,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33452EA117513CB50029ECCB /* AppactsPlugin.framework in Frameworks */,
 				33C01352168A6C090010B2E4 /* CoreLocation.framework in Frameworks */,
 				33C01350168A6BF10010B2E4 /* SystemConfiguration.framework in Frameworks */,
 				33C0134E168A6BB10010B2E4 /* CoreTelephony.framework in Frameworks */,
 				33C0134C168A6B790010B2E4 /* libsqlite3.dylib in Frameworks */,
 				330E5AF2168A228700EC6817 /* UIKit.framework in Frameworks */,
-				33F4CFC2168DAFF000909161 /* AppactsPlugin.framework in Frameworks */,
 				330E5AF4168A228700EC6817 /* Foundation.framework in Frameworks */,
 				330E5AF6168A228700EC6817 /* CoreGraphics.framework in Frameworks */,
 				330E5AF8168A228700EC6817 /* CoreData.framework in Frameworks */,
@@ -95,7 +95,7 @@
 		330E5AF0168A228700EC6817 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				33F4CFC1168DAFF000909161 /* AppactsPlugin.framework */,
+				33452EA017513CB50029ECCB /* AppactsPlugin.framework */,
 				33C01351168A6C090010B2E4 /* CoreLocation.framework */,
 				33C0134F168A6BF10010B2E4 /* SystemConfiguration.framework */,
 				33C0134D168A6BB10010B2E4 /* CoreTelephony.framework */,
@@ -301,6 +301,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../../../Library/Developer/Xcode/DerivedData/Appacts-ccyunppsyxppkeaemuycaopdmjzj/Build/Products/Debug-iphoneos\"",
 					"\"$(SRCROOT)/../../../../../Library/Developer/Xcode/DerivedData/Appacts-esbiolylxqegbkbqihqcvqcnzmmw/Build/Products/Debug-iphoneos\"",
+					"\"$(SRCROOT)/..\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SampleApplicationBasic/SampleApplicationBasic-Prefix.pch";
@@ -323,6 +324,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../../../Library/Developer/Xcode/DerivedData/Appacts-ccyunppsyxppkeaemuycaopdmjzj/Build/Products/Debug-iphoneos\"",
 					"\"$(SRCROOT)/../../../../../Library/Developer/Xcode/DerivedData/Appacts-esbiolylxqegbkbqihqcvqcnzmmw/Build/Products/Debug-iphoneos\"",
+					"\"$(SRCROOT)/..\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SampleApplicationBasic/SampleApplicationBasic-Prefix.pch";

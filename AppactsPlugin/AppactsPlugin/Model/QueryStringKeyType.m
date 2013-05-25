@@ -1,11 +1,3 @@
-//
-//  QueryStringKeyType.m
-//  AppactsPlugin
-//
-//  Created by Jamie Wheeldon on 20/05/2012.
-//  Copyright (c) 2012 Appacts. All rights reserved.
-//
-
 #import "QueryStringKeyType.h"
 
 @implementation QueryStringKeyType
@@ -43,5 +35,9 @@ NSString * const LOCATION_ADMIN = @"locationAdmin";
 NSString * const LOCATION_ADMIN_CODE = @"locationAdminCode";
 NSString * const SESSION_ID = @"sessionId";
 NSString * const TIME_ZONE_OFFSET = @"timeZoneOffset";
+NSString * const LOCALE = @"locale";
+NSString * const RESOLUTION_WIDTH = @"resolutionWidth";
+NSString * const RESOLUTION_HEIGHT = @"resolutionHeight";
+NSString * const MANUFACTURER = @"manufacturer";
 
 @end

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3326E7B1168B1EEF00EF6DF9 /* AppactsPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 3326E7B0168B1E2000EF6DF9 /* AppactsPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33452E2E17512F1F0029ECCB /* ScreenResolution.h in Headers */ = {isa = PBXBuildFile; fileRef = 33452E2C17512F1F0029ECCB /* ScreenResolution.h */; };
+		33452E2F17512F1F0029ECCB /* ScreenResolution.m in Sources */ = {isa = PBXBuildFile; fileRef = 33452E2D17512F1F0029ECCB /* ScreenResolution.m */; };
 		334B2EE0168A560D0079242C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 334B2EDF168A560D0079242C /* Foundation.framework */; };
 		3371CF85168A4FA800657016 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3371CF83168A4FA800657016 /* InfoPlist.strings */; };
 		3371CFE6168A4FDD00657016 /* Analytics.h in Headers */ = {isa = PBXBuildFile; fileRef = 3371CF8C168A4FDC00657016 /* Analytics.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -101,6 +103,8 @@
 
 /* Begin PBXFileReference section */
 		3326E7B0168B1E2000EF6DF9 /* AppactsPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppactsPlugin.h; sourceTree = "<group>"; };
+		33452E2C17512F1F0029ECCB /* ScreenResolution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenResolution.h; sourceTree = "<group>"; };
+		33452E2D17512F1F0029ECCB /* ScreenResolution.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenResolution.m; sourceTree = "<group>"; };
 		334B2EDF168A560D0079242C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3371CF7E168A4FA800657016 /* AppactsPlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppactsPlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3371CF82168A4FA800657016 /* AppactsPlugin-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppactsPlugin-Info.plist"; sourceTree = "<group>"; };
@@ -386,6 +390,8 @@
 				3371CFE1168A4FDD00657016 /* User.h */,
 				3371CFE2168A4FDD00657016 /* User.m */,
 				3371CFE3168A4FDD00657016 /* WebServiceResponseType.h */,
+				33452E2C17512F1F0029ECCB /* ScreenResolution.h */,
+				33452E2D17512F1F0029ECCB /* ScreenResolution.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -444,6 +450,7 @@
 				3371D031168A4FDD00657016 /* SystemError.h in Headers */,
 				3371D034168A4FDD00657016 /* User.h in Headers */,
 				3371D037168A4FDD00657016 /* Reachability.h in Headers */,
+				33452E2E17512F1F0029ECCB /* ScreenResolution.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -592,6 +599,7 @@
 				3371D032168A4FDD00657016 /* SystemError.m in Sources */,
 				3371D035168A4FDD00657016 /* User.m in Sources */,
 				3371D038168A4FDD00657016 /* Reachability.m in Sources */,
+				33452E2F17512F1F0029ECCB /* ScreenResolution.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
