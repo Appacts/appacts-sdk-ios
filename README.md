@@ -1,6 +1,11 @@
 Integration Examples
 ===============
 
+If you need help referencing framework file check out our Wiki:
+
+https://github.com/Appacts/appacts-sdk-ios/wiki/Referencing-iOS-SDK
+
+
 ##Basic Integration##
 
 ###Methods###
